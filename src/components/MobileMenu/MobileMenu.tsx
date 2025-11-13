@@ -24,9 +24,38 @@ export default function MobileMenu({ open, onClose }: Props) {
   const overlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+
+    const isIOS =
+      /iP(ad|hone|od)/.test(navigator.platform) ||
+      (navigator.userAgent.includes("Mac") && navigator.maxTouchPoints > 1);
+
+    const original = {
+      overflow: document.body.style.overflow,
+      position: document.body.style.position,
+      top: document.body.style.top,
+      width: document.body.style.width,
+    };
+
+    if (isIOS) {
+      const scrollY = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = "100%";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+
     return () => {
-      document.body.style.overflow = "";
+      if (isIOS) {
+        const y = Math.abs(parseInt(document.body.style.top || "0", 10));
+        document.body.style.position = original.position;
+        document.body.style.top = original.top;
+        document.body.style.width = original.width;
+        window.scrollTo(0, y);
+      } else {
+        document.body.style.overflow = original.overflow;
+      }
     };
   }, [open]);
 
