@@ -53,8 +53,7 @@
       transition: color $dur-2 $ease-in-out, border-color $dur-2 $ease-in-out,
         background $dur-2 $ease-in-out;
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: $color-tertiary;
         border-color: $color-primary;
       }
@@ -143,6 +142,10 @@
         border: 0;
         border-radius: 0;
         white-space: normal;
+
+        &:last-child {
+          margin: 0;
+        }
       }
 
       .active {
