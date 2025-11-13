@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# Portfolio — React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive personal portfolio with light/dark themes, PL/EN localization, AOS scroll animations, and modular SCSS.
 
-Currently, two official plugins are available:
+## Tech stack
+- React 19, TypeScript, Vite
+- SCSS Modules (design tokens, mixins, breakpoints)
+- AOS (Animate On Scroll)
+- i18n (PL/EN)
+- CSS custom properties + data-theme
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Light/Dark theme with system preference and localStorage persistence
+- Language toggle (PL/EN) via context
+- Smooth in-page navigation with header offset
+- Mobile menu with iOS-safe scroll lock
+- Accessible focus styles and ARIA labels
 
-## React Compiler
+## Requirements
+- Node.js 18+ and npm/yarn/pnpm
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Quick start
+```bash
+# install
+npm install
 
-## Expanding the ESLint configuration
+# dev server
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# lint
+npm run lint
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# production build + preview
+npm run build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Scripts are defined in package.json.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project structure
 ```
+src/
+  components/       # UI sections (Header, Banner, About, Experience, Skills, Certificates)
+  i18n/             # i18n provider and locales (pl/en)
+  styles/           # SCSS: abstracts (tokens/mixins), base, layout, main.scss
+  App.tsx           # AOS initialization and page sections
+  main.tsx          # Theme bootstrap and app mount
+```
+
+Key files:
+- Theme tokens and breakpoints: src/styles/abstracts/_variables.scss
+- Mixins (mq, container, focus ring): src/styles/abstracts/_mixins.scss
+- Global styles entry: src/styles/main.scss
+- Theme toggle: src/components/ThemeToggle/ThemeToggle.tsx
+- Language toggle: src/components/LangToggle/LangToggle.tsx
+- i18n provider and helpers: src/i18n/index.tsx; locales in src/i18n/locales/{pl,en}.json
+- Smooth scroll helpers: Header/MobileMenu components
+- Mobile menu overlay styles: src/components/MobileMenu/MobileMenu.module.scss
+
+## Theming
+- Current theme stored on documentElement as data-theme
+- Colors defined as CSS variables in _variables.scss and consumed via SCSS variables
+- System preference respected via prefers-color-scheme; user choice persisted
+
+## i18n
+- useI18n provides { lang, setLang, t }
+- Add keys to src/i18n/locales/pl.json and en.json, then use t("app.path.to.key")
+
+## Accessibility
+- Focus-visible ring mixin and global outline
+- ARIA attributes for interactive controls
+- Scroll lock on mobile menu prevents background scrolling on iOS
+
+## Build and deploy
+- Build outputs static assets to dist/
+- Host on any static hosting (Vercel, Netlify, GitHub Pages, etc.)
+
+## License
+Personal portfolio project.
