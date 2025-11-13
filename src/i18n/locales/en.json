@@ -6,14 +6,14 @@
             "name": "Wiktor",
             "position": "Fullstack",
             "developer": "Developer",
-            "subtitle": "building modern web apps with Vue/React and .NET."
+            "subtitle": "building modern web apps with Vue.js/React.js and .NET."
         },
         "about": {
             "completed_projects": "Completed projects",
             "years_of_exp": "Years of experience",
             "cups_of_coffee": "Cups of coffee",
             "title": "About me",
-            "text": "I’m a Fullstack Developer with over 3 years of experience building modern web applications using React, Vue, and .NET. I focus on creating clean, scalable, and high-performance solutions. I enjoy combining frontend precision with backend logic while maintaining code quality and effective teamwork."
+            "text": "I’m a Fullstack Developer with over 3 years of experience building modern web applications using React.js, Vue.js, and .NET. I focus on creating clean, scalable, and high-performance solutions. I enjoy combining frontend precision with backend logic while maintaining code quality and effective teamwork."
         },
         "skills": {
             "title": "Skills",
@@ -33,29 +33,29 @@
                     "role": "Full Stack Developer",
                     "company": "Byte and Bullet Technologies",
                     "period": "luty 2024 – present",
-                    "stack": "C#, .NET, PostgreSQL, Vue",
-                    "details": "Designing and developing web applications and APIs using .NET and Vue. Collaborating with cross-functional teams to build scalable B2B solutions."
+                    "stack": "Vue.js, .NET, PostgreSQL, C#",
+                    "details": "Tworzenie skalowalnych aplikacji internetowych z wykorzystaniem Vue.js i TypeScript, zintegrowanych z interfejsami API opartymi na ASP.NET oraz bazą danych PostgreSQL. Skoncentrowany na usprawnianiu procesów biznesowych poprzez czystą architekturę i efektywny przepływ danych."
                 },
                 {
                     "role": "Junior DevOps Engineer",
                     "company": "ING Hubs Poland",
                     "period": "October 2024 – May 2025",
                     "stack": "Azure, DevOps, Windows Server, Linux",
-                    "details": "Maintaining cloud infrastructure, automating CI/CD pipelines, and supporting development teams in a hybrid environment."
+                    "details": "Managing and automating infrastructure in a private cloud environment using Azure Pipelines and Universal Automation Controller. Ensuring high availability and security across Linux and Windows systems."
                 },
                 {
                     "role": "Web Developer",
                     "company": "White Label Coders",
                     "period": "July 2024 - September 2024",
-                    "stack": "PHP, WordPress, JavaScript, GitLab",
-                    "details": "Building and maintaining WordPress-based websites and applications. Working with CI/CD tools and managing development environments."
+                    "stack": "JavaScript, PHP, GitLab, WordPress",
+                    "details": "Maintaining and extending existing client websites, providing ongoing support and web development services using JavaScript and PHP. Focused on improving performance, stability, and functionality."
                 },
                 {
                     "role": "Web Developer",
                     "company": "IMADO",
                     "period": "July 2022 – July 2024",
-                    "stack": "React, JavaScript, TailwindCSS, WordPress",
-                    "details": "Developing user interfaces and responsive web pages. Collaborating with designers and backend developers to deliver projects for international clients."
+                    "stack": "React.js, JavaScript, SCSS, WordPress",
+                    "details": "Building responsive websites and reusable React.js components, designing and maintaining a Next.js starter framework for new projects. Integrated frontend applications with external APIs."
                 }
             ]
         },
@@ -78,11 +78,11 @@
                     "company": "Codecademy",
                     "date": "2024",
                     "skills": [
-                        "React",
+                        "React.js",
                         "JavaScript",
                         "Component Architecture"
                     ],
-                    "description": "Introduces React fundamentals including components, props, and state management for building interactive UIs."
+                    "description": "Introduces React.js fundamentals including components, props, and state management for building interactive UIs."
                 },
                 {
                     "name": "Microsoft Certified: Azure Fundamentals",
@@ -165,7 +165,7 @@
         },
         "seo": {
             "title": "Wiktor — Fullstack Developer",
-            "description": "Building modern web apps with Vue/React and .NET.",
+            "description": "Building modern web apps with Vue.js/React.js and .NET.",
             "keywords": "Fullstack, React, Vue, TypeScript, .NET, C#, PostgreSQL"
         }
     }
