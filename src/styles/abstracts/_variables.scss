@@ -1,0 +1,105 @@
+:root {
+  --header-h: 60px;
+}
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0f0e17;
+  --color-text: #fffffe;
+  --color-heading: #fffffe;
+  --color-paragraph: #a7a9be;
+  --color-primary: #ff8906;
+  --color-secondary: #f25f4c;
+  --color-tertiary: #e53170;
+
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-surface: #171a2a;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #fffffe;
+  --color-text: #0f0e17;
+  --color-heading: #0f0e17;
+  --color-paragraph: #0f0e17;
+  --color-primary: #ff8906;
+  --color-secondary: #f25f4c;
+  --color-tertiary: #e53170;
+
+  --color-border: rgba(0, 0, 0, 0.12);
+  --color-surface: #ffffff;
+}
+
+$color-bg: var(--color-bg);
+$color-text: var(--color-text);
+$color-heading: var(--color-heading);
+$color-paragraph: var(--color-paragraph);
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-tertiary: var(--color-tertiary);
+$color-border: var(--color-border);
+$color-surface: var(--color-surface);
+
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-8: 32px;
+$space-10: 40px;
+$space-12: 48px;
+
+$section-padding-min: 40px;
+$section-padding-mid: 5vw;
+$section-padding-max: 80px;
+
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-pill: 9999px;
+
+$shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.15);
+$shadow-2: 0 4px 12px rgba(0, 0, 0, 0.35), 0 2px 4px rgba(0, 0, 0, 0.25);
+
+$breakpoints: (
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px,
+);
+
+$container-max: 1200px;
+$container-pad: 20px;
+
+$ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+$dur-1: 120ms;
+$dur-2: 180ms;
+$dur-3: 250ms;
+
+$z: (
+  base: 0,
+  header: 100,
+  dropdown: 900,
+  overlay: 1000,
+  modal: 1100,
+  toast: 1200,
+);
+
+$font-size-h1: clamp(2rem, 5vw + 1rem, 3.5rem);
+$font-size-h2: clamp(1.75rem, 4vw + 0.5rem, 2.75rem);
+$font-size-h3: clamp(1.5rem, 3.5vw + 0.25rem, 2rem);
+$font-size-h4: clamp(1.25rem, 2.5vw, 1.5rem);
+$font-size-h5: clamp(1.125rem, 2vw, 1.375rem);
+$font-size-h6: clamp(14px, 1.5vw, 16px);
+$font-size-text: clamp(14px, 1.5vw, 18px);
+
+$font-primary: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+  sans-serif;
+$font-secondary: "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto,
+  Arial, sans-serif;

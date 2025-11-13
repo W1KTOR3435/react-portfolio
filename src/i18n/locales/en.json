@@ -1,0 +1,172 @@
+{
+    "app": {
+        "title": "WK",
+        "banner": {
+            "hello": "Hi, I'm",
+            "name": "Wiktor",
+            "position": "Fullstack",
+            "developer": "Developer",
+            "subtitle": "building modern web apps with Vue/React and .NET."
+        },
+        "about": {
+            "completed_projects": "Completed projects",
+            "years_of_exp": "Years of experience",
+            "cups_of_coffee": "Cups of coffee",
+            "title": "About me",
+            "text": "I’m a Fullstack Developer with over 3 years of experience building modern web applications using React, Vue, and .NET. I focus on creating clean, scalable, and high-performance solutions. I enjoy combining frontend precision with backend logic while maintaining code quality and effective teamwork."
+        },
+        "skills": {
+            "title": "Skills",
+            "other": "Other",
+            "soft": "Soft Skills",
+            "adaptability": "Adaptability",
+            "effective_communication": "Effective communication",
+            "problem_solving": "Problem solving",
+            "collaboration": "Collaboration",
+            "commitment": "Commitment",
+            "figma": "Figma (as developer)"
+        },
+        "experience": {
+            "title": "Experience",
+            "listItems": [
+                {
+                    "role": "Full Stack Developer",
+                    "company": "Byte and Bullet Technologies",
+                    "period": "luty 2024 – present",
+                    "stack": "C#, .NET, PostgreSQL, Vue",
+                    "details": "Designing and developing web applications and APIs using .NET and Vue. Collaborating with cross-functional teams to build scalable B2B solutions."
+                },
+                {
+                    "role": "Junior DevOps Engineer",
+                    "company": "ING Hubs Poland",
+                    "period": "October 2024 – May 2025",
+                    "stack": "Azure, DevOps, Windows Server, Linux",
+                    "details": "Maintaining cloud infrastructure, automating CI/CD pipelines, and supporting development teams in a hybrid environment."
+                },
+                {
+                    "role": "Web Developer",
+                    "company": "White Label Coders",
+                    "period": "July 2024 - September 2024",
+                    "stack": "PHP, WordPress, JavaScript, GitLab",
+                    "details": "Building and maintaining WordPress-based websites and applications. Working with CI/CD tools and managing development environments."
+                },
+                {
+                    "role": "Web Developer",
+                    "company": "IMADO",
+                    "period": "July 2022 – July 2024",
+                    "stack": "React, JavaScript, TailwindCSS, WordPress",
+                    "details": "Developing user interfaces and responsive web pages. Collaborating with designers and backend developers to deliver projects for international clients."
+                }
+            ]
+        },
+        "certificates": {
+            "title": "Certificates",
+            "listItems": [
+                {
+                    "name": "JavaScript Algorithms and Data Structures",
+                    "company": "freeCodeCamp",
+                    "date": "2023",
+                    "skills": [
+                        "JavaScript",
+                        "Algorithms",
+                        "Data Structures"
+                    ],
+                    "description": "Covers core JavaScript concepts, algorithms, and data structures, focusing on writing clean, efficient code."
+                },
+                {
+                    "name": "Learn React: Introduction Course",
+                    "company": "Codecademy",
+                    "date": "2024",
+                    "skills": [
+                        "React",
+                        "JavaScript",
+                        "Component Architecture"
+                    ],
+                    "description": "Introduces React fundamentals including components, props, and state management for building interactive UIs."
+                },
+                {
+                    "name": "Microsoft Certified: Azure Fundamentals",
+                    "company": "Microsoft",
+                    "date": "2024",
+                    "skills": [
+                        "Cloud Computing",
+                        "Azure",
+                        "DevOps"
+                    ],
+                    "description": "Validates understanding of cloud concepts, Azure services, and the basics of DevOps in Microsoft environments."
+                },
+                {
+                    "name": "Responsive Web Design",
+                    "company": "freeCodeCamp",
+                    "date": "2022",
+                    "skills": [
+                        "HTML5",
+                        "CSS3",
+                        "Responsive Design"
+                    ],
+                    "description": "Focuses on building mobile-friendly layouts using HTML and CSS with modern responsive techniques."
+                },
+                {
+                    "name": "Learn Vue.js Course",
+                    "company": "Codecademy",
+                    "date": "2024",
+                    "skills": [
+                        "Vue.js",
+                        "JavaScript",
+                        "Frontend Development"
+                    ],
+                    "description": "Teaches how to build reactive user interfaces with Vue.js, covering components, directives, and data binding."
+                },
+                {
+                    "name": "Introduction to DevOps Course",
+                    "company": "Codecademy",
+                    "date": "2024",
+                    "skills": [
+                        "CI/CD",
+                        "Automation",
+                        "DevOps Culture"
+                    ],
+                    "description": "Provides an overview of DevOps principles including continuous integration, automation, and collaboration."
+                },
+                {
+                    "name": "Learn Bash Scripting Course",
+                    "company": "Codecademy",
+                    "date": "2024",
+                    "skills": [
+                        "Bash Scripting",
+                        "Automation",
+                        "Shell Commands"
+                    ],
+                    "description": "Covers automation of repetitive tasks through Bash scripting and core command-line techniques."
+                },
+                {
+                    "name": "Learn the Command Line Course",
+                    "company": "Codecademy",
+                    "date": "2024",
+                    "skills": [
+                        "Command Line",
+                        "File System",
+                        "Terminal Navigation"
+                    ],
+                    "description": "Teaches essential command-line operations for navigating, managing files, and executing programs efficiently."
+                },
+                {
+                    "name": "Project Management Principles",
+                    "company": "Project Management Institute",
+                    "date": "2022",
+                    "skills": [
+                        "Project Management",
+                        "Team Collaboration",
+                        "Planning"
+                    ],
+                    "description": "Introduces core project management methodologies, planning strategies, and team coordination skills."
+                }
+            ]
+        },
+        "seo": {
+            "title": "Wiktor — Fullstack Developer",
+            "description": "Building modern web apps with Vue/React and .NET.",
+            "keywords": "Fullstack, React, Vue, TypeScript, .NET, C#, PostgreSQL"
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@use "../../styles/abstracts" as *;
+
+.about {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    padding: 0;
+    list-style: none;
+  }
+
+  .listItem {
+    font-weight: 500 !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: $color-heading;
+    font-size: $font-size-h5;
+
+    @include mq(xs) {
+      font-size: $font-size-h3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: $color-primary;
+      left: 45px;
+    }
+
+    .icon {
+      margin-right: 20px;
+      color: $color-primary;
+    }
+  }
+
+  .counter {
+    margin-left: 5px;
+    color: $color-primary;
+  }
+
+  @include mq(lg) {
+    flex-direction: row;
+
+    .column {
+      max-width: 50%;
+      width: 100%;
+    }
+
+    .listItem {
+      margin: unset;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@use "../../styles/abstracts" as *;
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: $space-8;
+  position: relative;
+
+  .title {
+    text-align: center;
+  }
+
+  .row,
+  .rowReverse {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: $space-8;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    @include mq(sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .shortInfo {
+    font-size: 1.1rem;
+    color: $color-text;
+    padding: 15px;
+    border: unset;
+    border-top: 2px solid $color-primary;
+
+    @include mq(sm) {
+      border: 2px solid $color-primary;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .details {
+    margin-bottom: 0;
+    padding: 0 15px;
+
+    @include mq(sm) {
+      margin-top: 1vw;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @include mq(sm) {
+    .row {
+      .shortInfo {
+        justify-self: start;
+        text-align: left;
+        order: 1;
+      }
+      .details {
+        justify-self: end;
+        order: 2;
+      }
+    }
+
+    .rowReverse {
+      .details {
+        justify-self: start;
+        order: 2;
+        order: 1;
+      }
+      .shortInfo {
+        justify-self: end;
+        text-align: right;
+
+        order: 2;
+      }
+    }
+  }
+}

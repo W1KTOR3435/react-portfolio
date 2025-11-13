@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+.container {
+  @include container($container-max, $container-pad);
+}
+
+section {
+  padding-top: clamp(
+    $section-padding-min,
+    $section-padding-mid,
+    $section-padding-max
+  );
+  padding-bottom: clamp(
+    $section-padding-min,
+    $section-padding-mid,
+    $section-padding-max
+  );
+}
+
+.titleWrapper {
+  display: flex;
+  margin-bottom: $space-4;
+
+  &--center {
+    justify-content: center;
+  }
+  .lucide {
+    color: $color-primary;
+  }
+
+  h2 {
+    margin-left: 5px;
+  }
+}
+
+.colorTertiary {
+  color: $color-tertiary;
+}

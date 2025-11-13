@@ -1,0 +1,24 @@
+@use "../../styles/abstracts" as *;
+
+.toggle {
+  display: inline-flex;
+  background-color: $color-bg;
+  align-items: center;
+  gap: $space-2;
+  padding: 4px $space-3;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  font-weight: 600;
+  font-size: $font-size-h6;
+  min-height: 38px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: $color-tertiary;
+    border: 2px solid $color-tertiary;
+  }
+
+  &:focus-visible {
+    @include focus-ring($color-primary);
+  }
+}

@@ -1,0 +1,123 @@
+@use "../abstracts" as *;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-primary;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $font-size-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3,
+.h3 {
+  font-size: $font-size-h3;
+}
+h4,
+.h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre {
+  margin-block: 0 $space-4;
+  color: $color-paragraph;
+}
+:where(section, article, main) > :last-child {
+  margin-bottom: 0;
+}
+
+a,
+button {
+  color: $color-primary;
+  font-family: $font-secondary;
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+  cursor: pointer;
+}
+a:hover {
+  color: $color-tertiary;
+}
+
+blockquote {
+  padding-left: $space-4;
+  border-left: 3px solid rgba(255, 255, 255, 0.15);
+  margin-block: $space-4;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-block: $space-6;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+code {
+  padding: 0.15em 0.35em;
+  border-radius: $radius-sm;
+  background: rgba(255, 255, 255, 0.06);
+}
+pre {
+  padding: $space-4;
+  border-radius: $radius-md;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: auto;
+}
+
+::selection {
+  background: $color-tertiary;
+}
+
+.underline {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -0.05em;
+    right: -0.05em;
+    bottom: 0.1em;
+    height: clamp(0px, 1.2vw, 4px);
+    background: $color-primary;
+    border-radius: 2px;
+  }
+}
