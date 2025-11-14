@@ -1,4 +1,4 @@
-# Portfolio — React + TypeScript + Vite
+# Portfolio - React + TypeScript + Vite
 
 Responsive personal portfolio with light/dark themes, PL/EN localization, AOS scroll animations, and modular SCSS.
 

@@ -28,7 +28,7 @@ export default function Certificates() {
           <ShieldCheck size={35} />
           <h2 className={styles.title}>{t("app.certificates.title")}</h2>
         </div>
-        <p>—</p>
+        <p>-</p>
       </section>
     );
   }
